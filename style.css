@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/026/305/040/small/vintage-abstract-black-white-wave-background-free-video.jpg'); /* Exemplo bonito */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #4fc3f7;
+}
+
+/* Seções */
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4fc3f7;
+}
+
+/* Projetos */
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border: 1px solid #4fc3f7;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+}
+
+.card h4 {
+  color: #4fc3f7;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #4fc3f7;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background-color: #0288d1;
+}
+
+/* Sobre */
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .sobre {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .curriculo, .objetivos {
+    flex: 1;
+    padding: 10px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer .redes a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.footer .redes a:hover {
+  color: #4fc3f7;
+}
