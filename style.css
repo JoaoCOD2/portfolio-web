@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 .background {
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/026/305/040/small/vintage-abstract-black-white-wave-background-free-video.jpg'); /* Exemplo bonito */
-  background-size: cover;
+  background-image: url('assets/images.png'); /* Exemplo bonito */
   background-attachment: fixed;
   background-position: center;
   position: fixed;
@@ -22,7 +21,7 @@ body {
   color: #fff;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,10 +32,11 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
+  text-align: center;
 }
 
 .logo {
-  width: 50px;
+  width: 70px;
 }
 
 .nav a {
@@ -50,13 +50,13 @@ body {
   color: #4fc3f7;
 }
 
-/* Seções */
+
 .section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
+  border-radius: 20px;
   margin-top: 30px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
@@ -67,7 +67,7 @@ body {
   color: #4fc3f7;
 }
 
-/* Projetos */
+
 .projetos {
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +118,13 @@ body {
 .sobre {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px;;
+}
+
+.logotipo{
+    gap: 20px;
+    width: 50px;
+    display: flex ;
 }
 
 @media (min-width: 768px) {
