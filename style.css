@@ -36,8 +36,9 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 80px;
   border-radius: 45px;
+  border: 2px solid #ccc;
 }
 
 .nav a {
